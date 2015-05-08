@@ -1,0 +1,78 @@
+/*------ Document -----*/
+body {
+	margin: 0 auto;
+	padding: 0;
+	font: .75em/1.5em Helvetica, Arial, sans-serif;
+	color: #797267;
+	width: 960px;
+	background: #797267;
+}
+
+header{
+	background-image: url(../images/header-bg.jpg);
+	height: 210px;
+	width: 960px;
+}
+
+h1{
+	background-image: url(../images/logo.gif);
+	height: 71px;
+	width: 317px;
+	background-repeat: no-repeat;
+	margin: 64px 71px 64px 64px;
+	position: absolute;
+}
+
+h1 a{
+	position: absolute;
+	left: -999em;
+}
+
+ul{
+	list-style-type: none;
+	width: 277px;
+	margin-top: 84px;
+	margin-right: 64px;
+	margin-left: 692px;
+	position: absolute;
+}
+
+li{
+	display: inline;
+}
+
+#main-content{
+	background-image: url(../images/main-content-bg.jpg);
+	height: 680px;
+	width: 960px;
+}
+
+#banner{
+	background-image: url(../images/banner.jpg);
+	height: 200px;
+	width: 890px;
+	margin: 0 auto;
+}
+
+h2{
+	font-size: 1.5em;
+	color: #423b2e;
+}
+
+#column1of2 {
+	float: left;
+	width: 260px;
+	margin: 20px 44px 70px 64px;
+}
+
+#column2of2 {
+	float: right;
+	width: 450px;
+	margin: 20px 64px 70px 0px;
+}
+
+footer{
+	background-image: url(../images/footer-bg.jpg);
+	width: 960px;
+}	
+
