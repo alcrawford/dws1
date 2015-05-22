@@ -1,27 +1,57 @@
 /*----css in chronological order of html elements----*/
 
+@font-face {
+    font-family: 'norwesterregular';
+    src: url('norwester-webfont.eot');
+    src: url('norwester-webfont.eot?#iefix') format('embedded-opentype'),
+         url('norwester-webfont.woff2') format('woff2'),
+         url('norwester-webfont.woff') format('woff'),
+         url('norwester-webfont.ttf') format('truetype'),
+         url('norwester-webfont.svg#norwesterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*----background lightning design---*/
+
 body {
 	background-color: #20B2AA;
 	color: #800000;
-	opacity: .95;
-	margin: 0px auto;
-	width: 960px;
+	opacity: 100%;
+	margin: 0 auto;
+	width: 91%;
+	background-image: url("images/midnight-rampage.png");
+	background-repeat:repeat;
 }
 
+/*center box with gradient off website*/
+
 #newbie {
-	width: 900px;
+	width: 65%;
 	margin: 0px auto;
-	padding: 20px;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	box-shadow: -5px 5px 15px 7px #000;
+	padding: 5%;
+	border-radius: 5%;
+	-moz-border-radius: 5%;
+	-webkit-border-radius: 5%;
+	box-shadow: -10% 35% 35% 12% #000;
 	background-color: #ffffff;
+	background: rgb(207,220,233); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(207,220,233,1) 0%, rgba(66,157,214,1) 13%, rgba(170,198,222,1) 19%, rgba(66,157,214,1) 28%, rgba(58,133,194,1) 33%, rgba(97,155,199,1) 44%, rgba(97,155,199,1) 44%, rgba(58,133,194,1) 50%, rgba(38,87,140,1) 58%, rgba(38,87,140,1) 58%, rgba(76,188,240,1) 69%, rgba(58,142,194,1) 81%, rgba(58,142,194,1) 81%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(207,220,233,1)), color-stop(13%,rgba(66,157,214,1)), color-stop(19%,rgba(170,198,222,1)), color-stop(28%,rgba(66,157,214,1)), color-stop(33%,rgba(58,133,194,1)), color-stop(44%,rgba(97,155,199,1)), color-stop(44%,rgba(97,155,199,1)), color-stop(50%,rgba(58,133,194,1)), color-stop(58%,rgba(38,87,140,1)), color-stop(58%,rgba(38,87,140,1)), color-stop(69%,rgba(76,188,240,1)), color-stop(81%,rgba(58,142,194,1)), color-stop(81%,rgba(58,142,194,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(207,220,233,1) 0%,rgba(66,157,214,1) 13%,rgba(170,198,222,1) 19%,rgba(66,157,214,1) 28%,rgba(58,133,194,1) 33%,rgba(97,155,199,1) 44%,rgba(97,155,199,1) 44%,rgba(58,133,194,1) 50%,rgba(38,87,140,1) 58%,rgba(38,87,140,1) 58%,rgba(76,188,240,1) 69%,rgba(58,142,194,1) 81%,rgba(58,142,194,1) 81%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(207,220,233,1) 0%,rgba(66,157,214,1) 13%,rgba(170,198,222,1) 19%,rgba(66,157,214,1) 28%,rgba(58,133,194,1) 33%,rgba(97,155,199,1) 44%,rgba(97,155,199,1) 44%,rgba(58,133,194,1) 50%,rgba(38,87,140,1) 58%,rgba(38,87,140,1) 58%,rgba(76,188,240,1) 69%,rgba(58,142,194,1) 81%,rgba(58,142,194,1) 81%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(207,220,233,1) 0%,rgba(66,157,214,1) 13%,rgba(170,198,222,1) 19%,rgba(66,157,214,1) 28%,rgba(58,133,194,1) 33%,rgba(97,155,199,1) 44%,rgba(97,155,199,1) 44%,rgba(58,133,194,1) 50%,rgba(38,87,140,1) 58%,rgba(38,87,140,1) 58%,rgba(76,188,240,1) 69%,rgba(58,142,194,1) 81%,rgba(58,142,194,1) 81%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(207,220,233,1) 0%,rgba(66,157,214,1) 13%,rgba(170,198,222,1) 19%,rgba(66,157,214,1) 28%,rgba(58,133,194,1) 33%,rgba(97,155,199,1) 44%,rgba(97,155,199,1) 44%,rgba(58,133,194,1) 50%,rgba(38,87,140,1) 58%,rgba(38,87,140,1) 58%,rgba(76,188,240,1) 69%,rgba(58,142,194,1) 81%,rgba(58,142,194,1) 81%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfdce9', endColorstr='#3a8ec2',GradientType=0 ); /* IE6-9 */
 }
+
+/*---rolling ghost icons----*/
 	
 h1 {
-	text-shadow: 3px;
-	
+	text-shadow: 15%;
+	background-image: url("images/ghosticon.png"); 
+	background-repeat: no repeat;
+	background-attachment: fixed;
 }
 
 h1, h2, h3, h4{
@@ -31,40 +61,46 @@ h1, h2, h3, h4{
 	text-align: center;
 	text-transform: none;
 	text-decoration: none;
+	background-image: url("images/ghosticon.png"); 
+	background-repeat: no repeat;
+	background-attachment: fixed;
 }
 	
 ul {
 	list-style-type: none;
 }
 
+/*--floats---*/
+
 p.first {
-	width: 375px;
+	width: 36%;
 	float: left;
-	padding: 5px;
-	margin: 10px;
+	padding: 2%;
+	margin: 5%;
 }
 
 p.second {
-	width: 375px;
+	width: 36%;
 	float: right;
-	padding: 5px;
-	margin: 10px;
+	padding: 2%;
+	margin: 5%;
 }
 
 .clear {
 	clear: both;
+	
 }
 
 /*------ unvisited link---- */
 
 a:link {
-    color: #800000;
+    color: #000000;
 }
 
 /*------ visited link------ */
 
 a:visited {
-    color: #87CEEB;
+    color: #000080;
 }
 
 /*------ mouse over link----- */
@@ -78,18 +114,8 @@ a:active {
     color: #7FFF00;
 }
 
-@font-face {
-    font-family: 'norwesterregular';
-    src: url('norwester-webfont.eot');
-    src: url('norwester-webfont.eot?#iefix') format('embedded-opentype'),
-         url('norwester-webfont.woff2') format('woff2'),
-         url('norwester-webfont.woff') format('woff'),
-         url('norwester-webfont.ttf') format('truetype'),
-         url('norwester-webfont.svg#norwesterregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
+
 
 	
 	
