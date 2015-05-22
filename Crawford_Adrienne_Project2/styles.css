@@ -37,14 +37,14 @@ ul {
 	list-style-type: none;
 }
 
-#first {
+p.first {
 	width: 375px;
 	float: left;
 	padding: 5px;
 	margin: 10px;
 }
 
-#second {
+p.second {
 	width: 375px;
 	float: right;
 	padding: 5px;
